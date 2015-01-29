@@ -1,0 +1,26 @@
+{
+  "name": "pulloverjs",
+  "version": "0.1.0",
+  "main": "pullover.js",
+  "license": "MIT",
+  "ignore": [
+    "**.*",
+    "*.md",
+    "*.txt",
+    "Gruntfile.js",
+    "package.json"
+  ],
+  "keywords": [
+    "overlay",
+    "failure",
+    "service",
+    "connection",
+    "offline"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  },
+  "devDependencies": {
+    "requirejs": "~2.1.15"
+  }
+}
