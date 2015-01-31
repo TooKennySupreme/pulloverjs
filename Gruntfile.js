@@ -1,7 +1,9 @@
 module.exports = function(grunt) {
   'use strict';
 
-  require('load-grunt-tasks')(grunt);
+  require('load-grunt-tasks')(grunt, {
+    pattern: ['grunt-*', '!grunt-template-jasmine-requirejs']
+  });
 
   grunt.initConfig({
 
@@ -9,6 +11,19 @@ module.exports = function(grunt) {
       all: {
         // all defaults
       },
+    },
+
+    jasmine: {
+      test: {
+        src: 'pullover.js',
+        options: {
+          specs: ['test/*-spec.js'],
+          template: require('grunt-template-jasmine-requirejs'),
+          templateOptions: {
+            requireConfigFile: 'test/config.js'
+          }
+        }
+      }
     },
 
     connect: {
@@ -40,6 +55,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('build', [
     'bower-install-simple',
+    'jasmine'
   ]);
 
   grunt.registerTask('default', ['build']);
