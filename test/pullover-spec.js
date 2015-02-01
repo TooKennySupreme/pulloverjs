@@ -4,19 +4,13 @@ define(['pullover'], function(pullover) {
   describe('PulloverJS', function() {
 
     beforeEach(function() {
-
       //loadFixtures('fixtures.html');
-
     });
 
-    it('fails at first', function() {
-
+    it('fails for when calling `nonexisting()` API method', function()  {
       expect(function() {
-
-        pullover.fail();
-
+        pullover.nonexisting();
       }).toThrow();
-
     });
 
   });

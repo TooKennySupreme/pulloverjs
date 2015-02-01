@@ -5,10 +5,8 @@
 
     var $ = require('jquery');
 
-    console.info('Hello from PulloverJS!');
-
     exports = $.extend(exports, {
-      // TODO: Add API here...
+      // Add public API here...
     });
 
   });
