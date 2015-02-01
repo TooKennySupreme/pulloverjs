@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/olle/pulloverjs.svg?branch=master)](https://travis-ci.org/olle/pulloverjs)
+
 PulloverJS
 ==========
 
